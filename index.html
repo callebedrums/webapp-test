@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Web App</title>
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- android -->
     <link rel="manifest" href="manifest-android.json">
 
@@ -31,12 +33,36 @@
         <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <style type="text/css">
+    .webapp-block {
+        display: none;
+    }
+    
+    .webapp-block:-webkit-full-screen,
+    .webapp-block:-moz-full-screen,
+    .webapp-block:-ms-fullscreen,
+    .webapp-block:fullscreen {
+        display: block;
+    }
+
+    .site-block {
+        display: block;
+    }
+    
+    .site-block:-webkit-full-screen,
+    .site-block:-moz-full-screen,
+    .site-block:-ms-fullscreen,
+    .site-block:fullscreen {
+        display: none;
+    }
+    </style>
 </head>
 <body>
 
     <h1>Web App</h1>
 
-    <h2></h2>
+    <h2 class="webapp-block">This is a Web App</h2>
+    <h2 class="site-block">This is a Site</h2>
     
     <!-- script -->
     <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
@@ -48,9 +74,9 @@
 
         $(function () {
             if (window.navigator.standalone == true) {
-                $('h2').text('This is a Web App');
+                $('.site-block').hide();
             } else {
-                $('h2').text('This is a Site');
+                $('.webapp-block').hide();
             }
         });
 
