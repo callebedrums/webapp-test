@@ -1,0 +1,22 @@
+{
+  "name": "webapp-test",
+  "description": "Project to test the webapp approach",
+  "main": "index.html",
+  "authors": [
+    "Callebe Gomes"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/callebedrums/webapp-test",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}

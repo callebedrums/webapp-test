@@ -1,0 +1,22 @@
+{
+  "name": "webapp-test",
+  "version": "0.0.0",
+  "description": "Project to test the webapp approach",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/callebedrums/webapp-test.git"
+  },
+  "author": "Callebe Gomes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/callebedrums/webapp-test/issues"
+  },
+  "homepage": "https://github.com/callebedrums/webapp-test",
+  "dependencies": {
+    "bower": "^1.7.7"
+  }
+}

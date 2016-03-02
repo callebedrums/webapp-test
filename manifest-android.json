@@ -1,0 +1,27 @@
+{
+  "short_name": "Web App",
+  "name": "Web App Test",
+  "icons": [
+    {
+      "src": "img/icons/webapp_64.png",
+      "sizes": "64x64",
+      "type": "image/png",
+      "density": "1.0"
+    },
+    {
+      "src": "img/icons/webapp_72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "density": "1.0"
+    },
+    {
+      "src": "img/icons/webapp_128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "density": "1.0"
+    }
+  ],
+  "start_url": "index.html",
+  "display": "standalone",
+  "orientation": "portrait"
+}
